@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/history_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/contact_profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/producto1"
+                app:civ_border_color="#FF000000"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Producto"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="1dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/datename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="1dp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10-08-18"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_below="@id/name" />
+
+                <TextView
+                    android:id="@+id/productname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ariel"
+                    android:layout_below="@+id/name" />
+
+                <TextView
+                    android:id="@+id/sizeproductname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/productname" />
+
+
+                <TextView
+                    android:id="@+id/sizeproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26"
+                    android:layout_marginTop="1dp"
+                    android:layout_below="@+id/sizeproductname" />
+
+                <TextView
+                    android:id="@+id/totalproduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/productname"
+                    android:layout_marginLeft="150dp" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="1dp"
+                    android:layout_below="@+id/sizeproductname"
+                    android:layout_marginLeft="150dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

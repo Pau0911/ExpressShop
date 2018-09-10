@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/icono" />
+
+    <TextView
+        android:id="@+id/banco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elige un banco"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="30dp"
+        android:textColor="" />
+
+    <RadioButton
+        android:id="@+id/radio_bancolom"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bancolombia"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onRadioButtonClicked"
+        android:layout_below="@+id/banco"
+        android:layout_marginBottom="5dp" />
+
+    <RadioButton
+        android:id="@+id/radio_banbogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Banco de Bogota"
+        android:textSize="20dp"
+        android:onClick="onRadioButtonClicked"
+        android:layout_below="@+id/radio_bancolom"
+        android:layout_marginBottom="5dp" />
+
+    <RadioButton
+        android:id="@+id/radio_banpopu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:text="Banco polular"
+        android:onClick="onRadioButtonClicked"
+        android:layout_below="@+id/radio_banbogo"
+        android:layout_marginBottom="5dp" />
+
+    <RadioButton
+        android:id="@+id/radio_banagra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Banco Agrario"
+        android:textSize="20dp"
+        android:onClick="onRadioButtonClicked"
+        android:layout_below="@+id/radio_banpopu"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="60dp"
+        android:text="Aceptar"
+        android:background="@drawable/buttongreen"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>
